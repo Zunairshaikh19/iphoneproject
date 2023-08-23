@@ -1051,19 +1051,7 @@
                                                                 <color key="titleColor" name="clrWhite"/>
                                                             </state>
                                                         </button>
-                                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoR-UL-j8v">
-                                                            <rect key="frame" x="8" y="8" width="100" height="30"/>
-                                                            <color key="backgroundColor" name="clrBlack"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="fb0-11-bZk"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal" title="Delete Image">
-                                                                <color key="titleColor" name="clrWhite"/>
-                                                            </state>
-                                                        </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axZ-Jt-3XE">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axZ-Jt-3XE">
                                                             <rect key="frame" x="8" y="8" width="100" height="30"/>
                                                             <color key="backgroundColor" name="clrBlack"/>
                                                             <constraints>
@@ -1075,17 +1063,31 @@
                                                                 <color key="titleColor" name="clrWhite"/>
                                                             </state>
                                                         </button>
+                                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoR-UL-j8v">
+                                                            <rect key="frame" x="8" y="8" width="100" height="30"/>
+                                                            <color key="backgroundColor" name="clrBlack"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="fb0-11-bZk"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Delete Image">
+                                                                <color key="titleColor" name="clrWhite"/>
+                                                            </state>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="wcC-Mq-Umg" firstAttribute="leading" secondItem="hN8-3c-WSU" secondAttribute="leading" constant="130" id="1H7-eU-xbM"/>
                                                         <constraint firstItem="qCK-6w-d7n" firstAttribute="leading" secondItem="hN8-3c-WSU" secondAttribute="leading" constant="-14" id="3Tt-FT-6b5"/>
+                                                        <constraint firstItem="AoR-UL-j8v" firstAttribute="top" secondItem="hN8-3c-WSU" secondAttribute="topMargin" id="4zS-SI-5NS"/>
                                                         <constraint firstItem="qCK-6w-d7n" firstAttribute="centerX" secondItem="hN8-3c-WSU" secondAttribute="centerX" id="50r-Di-b2J"/>
                                                         <constraint firstItem="sQH-a1-GuA" firstAttribute="leading" secondItem="0Ng-Z1-pbn" secondAttribute="leading" id="5qz-H0-TJZ"/>
                                                         <constraint firstItem="sQH-a1-GuA" firstAttribute="bottom" secondItem="0Ng-Z1-pbn" secondAttribute="bottom" id="GT4-Ew-3R2"/>
                                                         <constraint firstItem="wcC-Mq-Umg" firstAttribute="top" secondItem="hN8-3c-WSU" secondAttribute="top" constant="50" id="IaW-pu-dsI"/>
                                                         <constraint firstItem="AoR-UL-j8v" firstAttribute="leading" secondItem="axZ-Jt-3XE" secondAttribute="leading" id="K94-7K-jJq"/>
                                                         <constraint firstItem="AoR-UL-j8v" firstAttribute="trailing" secondItem="axZ-Jt-3XE" secondAttribute="trailing" id="QmL-O1-Zoo"/>
+                                                        <constraint firstItem="AoR-UL-j8v" firstAttribute="leading" secondItem="hN8-3c-WSU" secondAttribute="leadingMargin" id="Rx1-eI-LyC"/>
                                                         <constraint firstAttribute="bottom" secondItem="wcC-Mq-Umg" secondAttribute="bottom" constant="210" id="Tga-ht-B8k"/>
                                                         <constraint firstAttribute="trailing" secondItem="wcC-Mq-Umg" secondAttribute="trailing" constant="123" id="TmR-O3-crE"/>
                                                         <constraint firstItem="AoR-UL-j8v" firstAttribute="bottom" secondItem="axZ-Jt-3XE" secondAttribute="bottom" id="UlP-0M-xXg"/>
@@ -1387,6 +1389,7 @@
                                         <outlet property="bioLbl" destination="NUF-u2-Doh" id="reG-Fd-TVf"/>
                                         <outlet property="companyTF" destination="zde-Ii-bpg" id="QUl-Ju-Ok3"/>
                                         <outlet property="companyVu" destination="MmN-IU-ed4" id="Uon-f6-2wI"/>
+                                        <outlet property="coverImg" destination="qCK-6w-d7n" id="Mec-yC-bki"/>
                                         <outlet property="dobBtn" destination="Y8P-8A-AMg" id="lK3-Yc-D76"/>
                                         <outlet property="editBioBtn" destination="7dL-Rn-O5U" id="RNv-eF-ic3"/>
                                         <outlet property="editCompanyBtn" destination="eVg-I1-gn1" id="MT3-V3-ScK"/>

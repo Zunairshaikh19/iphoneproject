@@ -8,22 +8,23 @@ class CollectionHeaderView: UICollectionReusableView {
         didSet {
             imgVu.layer.cornerRadius = imgVu.frame.size.width / 2
                        imgVu.clipsToBounds = true
-            let gradientLayer = CAGradientLayer()
-            gradientLayer.frame = imgVu.bounds
-            gradientLayer.frame.size.width = imgVu.frame.size.width + 50
-            gradientLayer.colors = [UIColor.white.withAlphaComponent(0.1).cgColor, UIColor.white.withAlphaComponent(0.5).cgColor]
-            self.imgVu.layer.addSublayer(gradientLayer)
+//            let gradientLayer = CAGradientLayer()
+//            gradientLayer.frame = imgVu.bounds
+//            gradientLayer.frame.size.width = imgVu.frame.size.width + 50
+//            gradientLayer.colors = [UIColor.white.withAlphaComponent(0.1).cgColor, UIColor.white.withAlphaComponent(0.5).cgColor]
+//            self.imgVu.layer.addSublayer(gradientLayer)
         }
         
     }
     @IBOutlet weak var coverVu: UIImageView!{
         didSet {
             
-            let gradientLayer = CAGradientLayer()
-            gradientLayer.frame = coverVu.bounds
-            gradientLayer.frame.size.width = coverVu.frame.size.width + 50
-            gradientLayer.colors = [UIColor.white.withAlphaComponent(0.1).cgColor, UIColor.white.withAlphaComponent(0.5).cgColor]
-            self.coverVu.layer.addSublayer(gradientLayer)
+//            let gradientLayer = CAGradientLayer()
+//            gradientLayer.frame = coverVu.bounds
+            coverVu.frame.size.width = 400
+          
+//            gradientLayer.colors = [UIColor.white.withAlphaComponent(0.1).cgColor, UIColor.white.withAlphaComponent(0.5).cgColor]
+//            self.coverVu.layer.addSublayer(gradientLayer)
         }
         
     }

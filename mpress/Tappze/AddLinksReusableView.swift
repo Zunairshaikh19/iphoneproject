@@ -84,6 +84,14 @@ class AddLinksReusableView: UICollectionReusableView {
         }
         
     }
+    @IBOutlet weak var coverImg: UIImageView!{
+        didSet {
+         
+    
+        }
+        
+    }
+
     
     
     @IBOutlet weak var dobBtn: UIButton! {

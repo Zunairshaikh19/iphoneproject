@@ -32,6 +32,7 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
     var lblHeight : CGFloat = 00.0
     var bioText = "Bio"
     var profileUrl = ""
+    var coverUrl = ""
     var logoUrl = ""
     
     var nameChanged = false
@@ -39,6 +40,7 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
     var bioChanged = false
     //    var newBioText = ""
     var profileChanged = false
+    var coverChanged = false
     var newProfile = UIImage(named: "ic_image_placeholder")
     var dobChanged = false
     var newDob = "Date of Birth"
@@ -54,12 +56,14 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
     //==========================================
     var isLogoRemoved = false
     var isProfilePicRemoved = false
+    var isCoverPicRemoved = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionVu.delegate = self
         collectionVu.dataSource = self
         setProfile()
+        setCover()
         
         //getAllLinks()
         getAllLinksFromJsonFile()
@@ -217,21 +221,23 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
     
     override func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         
-        profileChanged = true
+    print("crop img fun")
         var storageRef = storage.reference()
         if isLogo {
             logoPic = image
             storageRef = storage.reference().child("logoImg:\(getUserId()).png")
             
-        } else {
+        }
+        if profileChanged{
             profilePicture = image
             storageRef = storage.reference().child("profilePic:\(getUserId()).png")
             imgChache.setObject(image, forKey: storageRef)
-            coverPicture = coverimage
-            storageRef = storage.reference().child("coverPic:\(getUserId()).png")
-            imgChache.setObject(coverimage, forKey: storageRef)
-
             
+        }
+        if coverChanged{
+            coverPicture = image
+            storageRef = storage.reference().child("coverPic:\(getUserId()).png")
+            imgChache.setObject(image, forKey: storageRef)
         }
         
         startLoading()
@@ -250,12 +256,20 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
                         //userDetails?.logoUrl = logoUrl
                         dict = ["id":getUserId(),
                                 "logoUrl":logoUrl]
-                    } else {
+                    }
+                    if profileChanged{
                         profileUrl = "\(storageRef)"
                         userDetails?.profileUrl = profileUrl
                         dict = ["id":getUserId(),
                                 "profileUrl":profileUrl]
                         NotificationCenter.default.post(name: Constants.profileUpdateNotif, object: nil, userInfo: ["url":profileUrl])
+                    }
+                    if coverChanged{
+                        coverUrl = "\(storageRef)"
+                        userDetails?.coverUrl = coverUrl
+                        dict = ["id":getUserId(),
+                                "coverUrl":coverUrl]
+                        NotificationCenter.default.post(name: Constants.profileUpdateNotif, object: nil, userInfo: ["url":coverUrl])
                     }
                     APIManager.updateUserProfile(dict) { [self] (success) in
                         saveUserToDefaults(userDetails!)
@@ -298,11 +312,14 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
         
         resignFirstResponder()
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            print("Button capture")
+            print("Button profile capture")
             imagePicker.delegate = self
             imagePicker.sourceType = .savedPhotosAlbum
             imagePicker.allowsEditing = false
             isLogo = false
+            coverChanged = false
+            profileChanged = true
+            
             present(imagePicker, animated: true, completion: nil)
         }
     }
@@ -310,23 +327,18 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
         
         resignFirstResponder()
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            print("Button capture")
+            print("Button cover capture")
             imagePicker.delegate = self
             imagePicker.sourceType = .savedPhotosAlbum
             imagePicker.allowsEditing = false
             isLogo = false
+            profileChanged = false
+            coverChanged = true
+            
             present(imagePicker, animated: true, completion: nil)
         }
     }
-    @objc func addressTapped (sender: UITapGestureRecognizer) {
-        let storyBoard = UIStoryboard(name: "MapVC", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "GoogleMapVC") as! GoogleMapVC
-        vc.addressDelegate = self
-        let appleMapVC = storyBoard.instantiateViewController(withIdentifier: "AppleMapVC") as? AppleMapVC
-        appleMapVC?.addressDelegate = self
-        vc.appleMapVC = appleMapVC
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
+  
     @objc func editFieldTapped (sender: UITapGestureRecognizer) {
         let header = collectionVu.supplementaryView(forElementKind:  UICollectionView.elementKindSectionHeader, at: headerIndex) as? AddLinksReusableView
         guard let view = sender.view else {
@@ -434,11 +446,9 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
             "id" : getUserId(),
             "name": name,
             "bio": bio,
-//            "dob": date,
-//            "phone": phone,
-//            "address": address,
             "company": company,
-            "profileUrl": profileUrl
+            "profileUrl": profileUrl,
+            "coverUrl": coverUrl
         ]
         
         APIManager.updateUserProfile(param as APIManager.dictionaryParameter) { [self] (success) in
@@ -447,6 +457,7 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
 
                 userDetails?.name = name
                 userDetails?.profileUrl = profileUrl
+                userDetails?.coverUrl = coverUrl
                 userDetails?.bio = bio
 //                userDetails?.phone = phone
 //                userDetails?.dob = date
@@ -455,10 +466,12 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
                 userDetails?.fcmToken = getFCM()
                 
                 NotificationCenter.default.post(name: Constants.profileUpdateNotif, object: nil, userInfo: ["name": name,"url":profileUrl])
-                
+                NotificationCenter.default.post(name: Constants.profileUpdateNotif, object: nil, userInfo: ["name": name,"url":coverUrl])
+
                 self.saveUserToDefaults(userDetails!)
                 
                 profileChanged = false
+                coverChanged = false
                 nameChanged = false
                 bioChanged = false
                 dobChanged = false
@@ -478,6 +491,7 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
     //TODO: cancelBtnPressed
     @IBAction func cancelBtnPressed(_ sender: Any) {
         profileChanged = false
+        coverChanged = false
         nameChanged = false
         bioChanged = false
         dobChanged = false
@@ -497,6 +511,14 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
             header?.removeProfileImg.isHidden = false
         }
     }
+    func setCoverRemoveButton(image: UIImage, header: AddLinksReusableView?) {
+        if (image == UIImage(named: "ic_image_placeholder")) {
+            header?.removecoverImg.isHidden = true
+        }
+        else {
+            header?.removecoverImg.isHidden = false
+        }
+    }
     
     @objc func removeProfileTapped (_ button: UIButton) {
         profileUrl = ""
@@ -513,16 +535,16 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
         }
     }
     @objc func removeCoverTapped (_ button: UIButton) {
-        profileUrl = ""
-        profileChanged = true
-        self.isProfilePicRemoved = true
+        coverUrl = ""
+        coverChanged = true
+        self.isCoverPicRemoved = true
         self.showTwoBtnAlert(title: AlertConstants.Alert, message: "Do you want to remove?", yesBtn: "Yes", noBtn: "No") { isYes in
             if isYes{
-                self.profilePicture = UIImage(named: "ic_image_placeholder")
+                self.coverPicture = UIImage(named: "ic_image_placeholder")
                 let header = self.collectionVu.supplementaryView(forElementKind:  UICollectionView.elementKindSectionHeader, at: (self.headerIndex)) as? AddLinksReusableView
-                header?.profileImg.image = UIImage(named: "ic_image_placeholder")
-                header?.removeProfileImg.isHidden = true
-                self.updateProfileImages()
+                header?.coverImg.image = UIImage(named: "ic_image_placeholder")
+                header?.removecoverImg.isHidden = true
+                self.updateCoverImages()
             }
         }
     }
@@ -534,6 +556,7 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
         var storageRef = storage.reference()
         if isProfilePicRemoved {
             storageRef = storage.reference().child("profilePic:\(getUserId()).png")
+            
             //imgChache.setObject(profilePicture!, forKey: storageRef)
             profileUrl = ""
             imgChache.removeObject(forKey: storageRef)
@@ -547,11 +570,39 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
             
             NotificationCenter.default.post(name: Constants.profileUpdateNotif, object: nil, userInfo: ["url":profileUrl])
         }
+        
         startLoading()
         APIManager.updateUserProfile(dict) { [self] (success) in
             saveUserToDefaults(userDetails!)
             stopLoading()
             print("Saved profile with url",dict)
+        }
+    }
+    func updateCoverImages() {
+        //let image = UIImage(named: "ic_image_placeholder")
+        coverChanged = true
+        var dict = [String:String]()
+        var storageRef = storage.reference()
+        if isCoverPicRemoved {
+            storageRef = storage.reference().child("coverPic:\(getUserId()).png")
+            //imgChache.setObject(profilePicture!, forKey: storageRef)
+            coverUrl = ""
+            imgChache.removeObject(forKey: storageRef)
+            
+            userDetails?.coverUrl = ""
+            
+            let user = readUserData()
+            dict = ["id": (user?.id)!,
+                    "coverUrl":""]
+            
+            
+            NotificationCenter.default.post(name: Constants.profileUpdateNotif, object: nil, userInfo: ["url":coverUrl])
+        }
+        startLoading()
+        APIManager.updateUserProfile(dict) { [self] (success) in
+            saveUserToDefaults(userDetails!)
+            stopLoading()
+            print("Saved cover with url",dict)
         }
     }
     
@@ -672,6 +723,73 @@ class AddLinksVC: BaseClass,TextBackProtocol,getDate,LinkAdded,LinkDeleted, MapA
                                 header?.profileImg.image = img
                                 self.profilePicture = img
                                 self.setProfileRemoveButton(image: img, header: header)
+                            }
+                        }
+                    }
+                }
+            }
+            
+            if logoUrl != "" {
+                
+                ref = storage.reference(forURL: logoUrl)
+                
+                ref.getData(maxSize: 1 * 1024 * 1024) { data, error in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        // Uh-oh, an error occurred!
+                    } else {
+                        if let img = UIImage(data: data!) {
+                            //header?.logoBtn.setImage(img, for: .normal)
+                            self.logoPic = img
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        //        profilePicture =  userProfileInDefault?["profileUrl"] as? String
+    }
+    
+    func setCover() {
+        
+        userDetails = readUserData()
+        
+        if let text = userDetails?.bio, text == "" || text.isEmpty {
+            let height = "Bio".getStringHeight(constraintedWidth: (collectionVu.frame.width - 30) , font: UIFont.systemFont(ofSize: 22.5))
+            headerTotalHeight = headerHeight + height
+            
+        } else {
+            let height = userDetails?.bio?.getStringHeight(constraintedWidth: collectionVu.frame.width , font: UIFont.systemFont(ofSize: 22.5))
+            headerTotalHeight = headerHeight + (height ?? 20)
+        }
+        collectionVu.reloadData()
+        coverUrl = userDetails?.coverUrl ?? ""
+        //logoUrl = userDetails?.logoUrl ?? ""
+        
+        //        var url = URL(string: profileUrl)
+        
+        DispatchQueue.main.async { [self] in
+            var ref = storage.reference()
+            let header = self.collectionVu.supplementaryView(forElementKind:  UICollectionView.elementKindSectionHeader, at: (self.headerIndex)) as? AddLinksReusableView
+            
+            if coverUrl != "" {
+                ref = storage.reference(forURL: coverUrl)
+                if let cacheImg = imgChache.object(forKey: ref) as? UIImage {
+                    header?.coverImg.image = cacheImg
+                    self.coverPicture = cacheImg
+                    self.setCoverRemoveButton(image: cacheImg, header: header)
+                } else {
+                    ref.getData(maxSize: 1 * 1024 * 1024) { data, error in
+                        if let error = error {
+                            print(error.localizedDescription)
+                            // Uh-oh, an error occurred!
+                        } else {
+                            if let img = UIImage(data: data!) {
+                                imgChache.setObject(img, forKey: ref)
+                                header?.coverImg.image = img
+                                self.coverPicture = img
+                                self.setCoverRemoveButton(image: img, header: header)
                             }
                         }
                     }
@@ -940,11 +1058,16 @@ extension AddLinksVC: UICollectionViewDataSource, UICollectionViewDelegate, UICo
             print(indexPath)
             let numberOfPostsViewSelector : Selector = #selector(self.imgVuTapped)
             let viewPostsViewGesture = UITapGestureRecognizer(target: self, action: numberOfPostsViewSelector)
+            let numberOfPostsViewSelector2 : Selector = #selector(self.imgcoverVuTapped)
+            let viewPostsViewGesture2 = UITapGestureRecognizer(target: self, action: numberOfPostsViewSelector2)
             headerView.profileImg.isUserInteractionEnabled = true
+            headerView.addcoverImg.isUserInteractionEnabled = true
             viewPostsViewGesture.numberOfTapsRequired = 1
             viewPostsViewGesture.delaysTouchesBegan = true
+            viewPostsViewGesture2.numberOfTapsRequired = 1
+            viewPostsViewGesture2.delaysTouchesBegan = true
             headerView.profileImg.addGestureRecognizer(viewPostsViewGesture)
-
+            headerView.addcoverImg.addGestureRecognizer(viewPostsViewGesture2)
             headerView.nameTF.addTarget(self, action: #selector(didEndEditing(textField:)), for: .editingDidEnd)
             
             headerView.companyTF.addTarget(self, action: #selector(didEndEditing(textField:)), for: .editingDidEnd)
@@ -958,8 +1081,8 @@ extension AddLinksVC: UICollectionViewDataSource, UICollectionViewDelegate, UICo
             let userNameSelector : Selector = #selector(self.editFieldTapped)
             let userNameViewGesture = UITapGestureRecognizer(target: self, action: userNameSelector)
             
-            let addressSelector : Selector = #selector(self.addressTapped)
-            let addressVuGesture = UITapGestureRecognizer(target: self, action: addressSelector)
+//            let addressSelector : Selector = #selector(self.addressTapped)
+//            let addressVuGesture = UITapGestureRecognizer(target: self, action: addressSelector)
            
             headerView.userNameVu.addGestureRecognizer(userNameViewGesture)
             
@@ -1003,8 +1126,9 @@ extension AddLinksVC: UICollectionViewDataSource, UICollectionViewDelegate, UICo
             }
             
             headerView.profileImg.image = profilePicture
+            headerView.coverImg.image = coverPicture
             self.setProfileRemoveButton(image: profilePicture!, header: headerView)
-            
+            self.setCoverRemoveButton(image: coverPicture!, header: headerView)
           
         default:
             assert(false, "Invalid element type")
