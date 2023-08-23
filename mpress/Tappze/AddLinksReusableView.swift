@@ -76,11 +76,11 @@ class AddLinksReusableView: UICollectionReusableView {
         didSet {
             profileImg.layer.cornerRadius = profileImg.frame.size.width / 2
             profileImg.clipsToBounds = true
-            let gradientLayer = CAGradientLayer()
-            gradientLayer.frame = profileImg.bounds
-            gradientLayer.frame.size.width = profileImg.frame.size.width + 50
-            gradientLayer.colors = [UIColor.white.withAlphaComponent(0.1).cgColor, UIColor.white.withAlphaComponent(0.5).cgColor]
-            self.profileImg.layer.addSublayer(gradientLayer)
+//            let gradientLayer = CAGradientLayer()
+//            gradientLayer.frame = profileImg.bounds
+//            gradientLayer.frame.size.width = profileImg.frame.size.width + 50
+//            gradientLayer.colors = [UIColor.white.withAlphaComponent(0.1).cgColor, UIColor.white.withAlphaComponent(0.5).cgColor]
+//            self.profileImg.layer.addSublayer(gradientLayer)
         }
         
     }
