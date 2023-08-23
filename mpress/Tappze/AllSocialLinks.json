@@ -1,0 +1,218 @@
+{
+
+    "allSocialLinks":[
+        {
+            "baseUrl": "",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_add_new.png",
+            "name": "Add New",
+            "packageName": ""
+        },
+        {
+            "linkID": 101,
+            "baseUrl": "email",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_email.png",
+            "name": "Email"
+        },
+        {
+            "linkID": 102,
+            "baseUrl": "",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_fb.png",
+            "name": "Facebook",
+            "packageName": "com.facebook.katana"
+        },
+        {
+            "linkID": 103,
+            "baseUrl": "http://instagram.com/_u/",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_insta.png",
+            "name": "Instagram",
+            "packageName": "com.instagram.android"
+        },
+        {
+            "linkID": 104,
+            "baseUrl": "",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_linkedin.png",
+            "name": "LinkedIn",
+            "packageName": "com.linkedin.android"
+        },
+        {
+            "linkID": 105,
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_paypal.png",
+            "name": "Paypal",
+            "packageName": "com.paypal.android.p2pmobile"
+        },
+        {
+            "linkID": 106,
+            "baseUrl": "",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_pinterest.png",
+            "name": "Pinterest",
+            "packageName": "com.pinterest"
+        },
+        {
+            "linkID": 107,
+            "baseUrl": "https://snapchat.com/add/",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_snapchat.png",
+            "name": "Snapchat",
+            "packageName": "com.snapchat.android"
+        },
+        {
+            "linkID": 108,
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_spotify.png",
+            "name": "Spotify",
+            "packageName": "com.spotify.music"
+        },
+        {
+            "linkID": 109,
+            "baseUrl": "https://t.me/",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_telegram.png",
+            "name": "Telegram",
+            "packageName": "org.telegram.messenger"
+        },
+        {
+            "linkID": 111,
+            "baseUrl": "https://www.tiktok.com/@",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_tiktok.png",
+            "name": "TikTok",
+            "packageName": "com.zhiliaoapp.musically"
+        },
+        {
+            "linkID": 112,
+            "baseUrl": "https://twitter.com/#!/",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_twitter.png",
+            "name": "Twitter",
+            "packageName": "com.twitter.android"
+        },
+        {
+            "linkID": 113,
+            "baseUrl": "",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_vimeo.png",
+            "name": "Vimeo",
+            "packageName": "com.vimeo.android.videoapp"
+        },
+        {
+            "linkID": 114,
+            "baseUrl": "web",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_www.png",
+            "name": "Website",
+            "packageName": ""
+        },
+        {
+            "linkID": 115,
+            "baseUrl": "https://api.whatsapp.com/send?phone=",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_whatsapp.png",
+            "name": "Whatsapp",
+            "packageName": "com.whatsapp"
+        },
+        {
+            "linkID": 116,
+            "baseUrl": "",
+            "image": "gs://linkpod-331b0.appspot.com/socialImages/ic_youtube.png",
+            "name": "YouTube",
+            "packageName": "com.google.android.youtube"
+        },
+        {
+            "linkID": 117,
+            "baseUrl": "",
+            "image": "",
+            "name": "Calendly",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 118,
+            "baseUrl": "",
+            "image": "",
+            "name": "Google",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 119,
+            "baseUrl": "",
+            "image": "",
+            "name": "Yelp",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 120,
+            "baseUrl": "",
+            "image": "",
+            "name": "Portfolio",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 121,
+            "baseUrl": "",
+            "image": "",
+            "name": "Shop",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 122,
+            "baseUrl": "",
+            "image": "",
+            "name": "Menu",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 123,
+            "baseUrl": "",
+            "image": "",
+            "name": "Catalog",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 124,
+            "baseUrl": "",
+            "image": "",
+            "name": "Open Table",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 125,
+            "baseUrl": "",
+            "image": "",
+            "name": "Venmo",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 127,
+            "baseUrl": "",
+            "image": "",
+            "name": "Wi-Fi",
+            "packageName": "com.calendly.app"
+        },
+        {
+            "linkID": 4,
+            "baseUrl": "",
+            "image": "",
+            "name": "Custom Link 1",
+            "packageName": ""
+        },
+        {
+            "linkID": 22,
+            "baseUrl": "",
+            "image": "",
+            "name": "Custom Link 2",
+            "packageName": ""
+        },
+        {
+            "linkID": 23,
+            "baseUrl": "",
+            "image": "",
+            "name": "Custom Link 3",
+            "packageName": ""
+        },
+        {
+            "linkID": 24,
+            "baseUrl": "",
+            "image": "",
+            "name": "Custom Link 4",
+            "packageName": ""
+        },
+        {
+            "linkID": 25,
+            "baseUrl": "",
+            "image": "",
+            "name": "Custom Link 5",
+            "packageName": ""
+        }
+    ]
+}

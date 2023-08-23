@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BF5-dL-zeX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Profile AlertVC-->
+        <scene sceneID="2Sy-sP-Ywh">
+            <objects>
+                <viewController storyboardIdentifier="addProfileAlertVC_id" id="BF5-dL-zeX" customClass="AddProfileAlertVC" customModule="Tappze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFh-te-x7V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7J-1M-gOD">
+                                <rect key="frame" x="30" y="303" width="354" height="290"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_checked" translatesAutoresizingMaskIntoConstraints="NO" id="GuM-Gq-GUt">
+                                        <rect key="frame" x="152" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DSr-zB-iLF"/>
+                                            <constraint firstAttribute="width" constant="50" id="eFG-2r-uAY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udn-sm-A5D">
+                                        <rect key="frame" x="150" y="100" width="54" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="23"/>
+                                        <color key="textColor" name="clrBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure to add profile?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzb-Ma-tXU">
+                                        <rect key="frame" x="60.5" y="152.5" width="233" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                        <color key="textColor" name="clrBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KmE-wt-HAx">
+                                        <rect key="frame" x="30" y="221.5" width="294" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3d-hn-xR3">
+                                                <rect key="frame" x="0.0" y="0.0" width="142" height="45"/>
+                                                <color key="backgroundColor" name="clrBlack"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="J5h-Bj-16l"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="NO">
+                                                    <color key="titleColor" name="clrWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelBtnAction:" destination="BF5-dL-zeX" eventType="touchUpInside" id="cCh-7y-m6s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmv-1p-4M9">
+                                                <rect key="frame" x="152" y="0.0" width="142" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="vzt-Po-a8X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="YES">
+                                                    <color key="titleColor" name="clrWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="okBtnAction:" destination="BF5-dL-zeX" eventType="touchUpInside" id="Jph-G1-owx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="RW5-5E-Rdj"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Dzb-Ma-tXU" firstAttribute="top" secondItem="udn-sm-A5D" secondAttribute="bottom" constant="20" id="AqE-IZ-wjL"/>
+                                    <constraint firstItem="Dzb-Ma-tXU" firstAttribute="centerX" secondItem="udn-sm-A5D" secondAttribute="centerX" id="Efb-wW-kmv"/>
+                                    <constraint firstItem="KmE-wt-HAx" firstAttribute="leading" secondItem="V7J-1M-gOD" secondAttribute="leading" constant="30" id="Fx5-6Y-qq9"/>
+                                    <constraint firstAttribute="bottom" secondItem="KmE-wt-HAx" secondAttribute="bottom" constant="23.5" id="Mby-yO-OfS"/>
+                                    <constraint firstAttribute="height" constant="290" id="Osc-Nk-nFP"/>
+                                    <constraint firstItem="udn-sm-A5D" firstAttribute="centerX" secondItem="GuM-Gq-GUt" secondAttribute="centerX" id="Zmd-Ki-sx6"/>
+                                    <constraint firstAttribute="trailing" secondItem="KmE-wt-HAx" secondAttribute="trailing" constant="30" id="dXS-EW-KS6"/>
+                                    <constraint firstItem="udn-sm-A5D" firstAttribute="top" secondItem="GuM-Gq-GUt" secondAttribute="bottom" constant="20" id="fAF-Ie-HzS"/>
+                                    <constraint firstItem="GuM-Gq-GUt" firstAttribute="centerX" secondItem="V7J-1M-gOD" secondAttribute="centerX" id="iAZ-Vp-jq4"/>
+                                    <constraint firstItem="KmE-wt-HAx" firstAttribute="top" secondItem="V7J-1M-gOD" secondAttribute="top" constant="221.5" id="nNw-Vy-BF8"/>
+                                    <constraint firstItem="GuM-Gq-GUt" firstAttribute="top" secondItem="V7J-1M-gOD" secondAttribute="top" constant="30" id="rwV-Ct-x8U"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lD7-30-pW4"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V7J-1M-gOD" firstAttribute="centerY" secondItem="dFh-te-x7V" secondAttribute="centerY" id="Xlk-9X-03G"/>
+                            <constraint firstItem="V7J-1M-gOD" firstAttribute="leading" secondItem="lD7-30-pW4" secondAttribute="leading" constant="30" id="c2C-PL-qBI"/>
+                            <constraint firstItem="V7J-1M-gOD" firstAttribute="centerX" secondItem="dFh-te-x7V" secondAttribute="centerX" id="h02-1O-ApQ"/>
+                            <constraint firstItem="lD7-30-pW4" firstAttribute="trailing" secondItem="V7J-1M-gOD" secondAttribute="trailing" constant="30" id="of8-g7-6Lw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="j3d-hn-xR3" id="2ya-Ow-bWi"/>
+                        <outlet property="main_bgView" destination="V7J-1M-gOD" id="JRy-0S-CPX"/>
+                        <outlet property="okBtn" destination="nmv-1p-4M9" id="d73-sw-GJv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ax6-cl-CVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_checked" width="32" height="32"/>
+        <namedColor name="clrBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="clrWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

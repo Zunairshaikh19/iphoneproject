@@ -1,0 +1,134 @@
+{
+  "identifier" : "DCD1B1D3",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "10",
+      "familyShareable" : false,
+      "internalID" : "3832D5DE",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Purchase card",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "english",
+          "displayName" : "Tapzee English",
+          "locale" : "en_GB"
+        }
+      ],
+      "productID" : "com.tappze.avicenna.TappzeCard",
+      "referenceName" : "Tappze Card",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "CD454E8F",
+      "localizations" : [
+
+      ],
+      "name" : "Tappze Subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "3.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "D95D5565",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Subscription for 1 month, to unlock features ",
+              "displayName" : "Monthly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.tappze.avicenna.MonthlySubscription",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Basic",
+          "subscriptionGroupID" : "CD454E8F",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "42",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "64D8A6C9",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Purchase yearly package",
+              "displayName" : "Yearly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.tappze.avicenna.YearlySubscription",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Yearly Basic",
+          "subscriptionGroupID" : "CD454E8F",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "0E8FF527",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Subscription for 1 month, to unlock features ",
+              "displayName" : "Monthly Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.tappze.avicenna.ProMonthlySubscription",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Pro",
+          "subscriptionGroupID" : "CD454E8F",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "52",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "F154E560",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Subscription for 1 year, to unlock features ",
+              "displayName" : "Yearly Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.tappze.avicenna.ProYearlySubscription",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Yearly Pro",
+          "subscriptionGroupID" : "CD454E8F",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

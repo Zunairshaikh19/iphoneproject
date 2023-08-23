@@ -1,0 +1,6 @@
+framework module Pods_Tappze_TappzeUITests {
+  umbrella header "Pods-Tappze-TappzeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

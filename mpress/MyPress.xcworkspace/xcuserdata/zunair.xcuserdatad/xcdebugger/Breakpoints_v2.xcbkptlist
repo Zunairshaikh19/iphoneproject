@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E2B4A2C9-855F-4C25-8CC5-A81404363B8D"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5860FC7A-A0BC-44BE-858A-1CB187FAE48B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "786"
+            endingLineNumber = "786"
+            landmarkName = "DashBoardVC"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B2E7D35-2328-4068-A2DB-3D8061EC105C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8909F574-8F84-448E-B36C-2C21E865E850"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D632E340-F1CE-462F-A2FE-F3E75B8BAF20"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "didChangeSegment(segment:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D60FF898-F6CF-4785-846D-8C209C0F619F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "666E6367-F9F1-4059-9834-42875146C551"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "didChangeProfileOnOff(isProfileOn:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CC3A6F4-12AA-41C1-9EA7-D4C728060FD5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "leadInfoBtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89887597-91C8-43CB-BE8D-3E8D06BC747E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "profileOnOffInfoBtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77F51339-696D-4906-98CE-92E022861A02"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "deleteLink(platform:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3611D7C2-F48D-494A-AC41-6A1673D5806D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "deleteLink(platform:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35C9DA74-85D9-4397-983A-053078A67F4C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "deleteLink(platform:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54F4DC75-FD0C-45B3-BB43-0F6555D768BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "linkReceived(text:platform:imageUrl:isShared:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "602EF52F-B921-463A-9923-98B31B567E4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "linkReceived(text:platform:imageUrl:isShared:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8FB6FCB-3699-494F-810D-02423F24FE2C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "linkReceived(text:platform:imageUrl:isShared:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E46D1320-0DFD-4F0D-B1D0-72A776F2AD84"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "linkReceived(text:platform:imageUrl:isShared:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/DashBoardVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "DashBoardVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - a833bba83026f2f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.getter : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - 4c1e3ea0a4c586e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.setter : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - b427579b8b6a69f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.modify : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - 5f3e7bbe1e5edcc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.modify : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - d9632c6fc3caa77e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MPress.DashBoardVC"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "507">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - 35735eec8d53bff5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MPress.DashBoardVC&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "458">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - a833bba83026f330"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.getter : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - 4c1e3ea0a4c58724"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.setter : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - b427579b8b6a6833"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.modify : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - 5f3e7bbe1e5edd07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.linksDict.modify : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - d9632c6fc3caa6bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MPress.DashBoardVC"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "30FF9136-6338-47A1-9257-59A0BF335EBE - 35735eec8d53be37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPress.DashBoardVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MPress.DashBoardVC&gt;"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/DashBoardVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B046B309-76D2-4299-A960-4992B03429C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
+            landmarkName = "getUserLinksForDashboard(id:completion:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E632154D-2FB3-4093-9347-3C4D1C1733D7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "getUserLinksForDashboard(id:completion:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E632154D-2FB3-4093-9347-3C4D1C1733D7 - d69f6e860ffaad4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MPress.APIManager.getUserLinksForDashboard(id: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;MPress.Links&gt;&gt;) -&gt; (), error: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "335"
+                  endingLineNumber = "335"
+                  offsetFromSymbolStart = "447">
+               </Location>
+               <Location
+                  uuid = "E632154D-2FB3-4093-9347-3C4D1C1733D7 - cb76f1166ef48b03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in static MPress.APIManager.getUserLinksForDashboard(id: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;MPress.Links&gt;&gt;) -&gt; (), error: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "187">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F0519CA-5C43-462B-8CBD-1E7E9F7B19FB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
+            landmarkName = "getAllLinks(completion:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F0519CA-5C43-462B-8CBD-1E7E9F7B19FB - c8c44ddc38ff9ed3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MPress.APIManager.getAllLinks(completion: (Swift.Optional&lt;Swift.Array&lt;MPress.Links&gt;&gt;) -&gt; (), error: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "368"
+                  endingLineNumber = "368"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "4F0519CA-5C43-462B-8CBD-1E7E9F7B19FB - 5da91a19fd8c83f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in static MPress.APIManager.getAllLinks(completion: (Swift.Optional&lt;Swift.Array&lt;MPress.Links&gt;&gt;) -&gt; (), error: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "368"
+                  endingLineNumber = "368"
+                  offsetFromSymbolStart = "191">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "271F03B9-F4B9-47C3-B3FD-8E55FE055DF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
+            landmarkName = "getAllLinks(completion:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "271F03B9-F4B9-47C3-B3FD-8E55FE055DF6 - 5da91a19fd8c8082"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in static MPress.APIManager.getAllLinks(completion: (Swift.Optional&lt;Swift.Array&lt;MPress.Links&gt;&gt;) -&gt; (), error: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "374"
+                  endingLineNumber = "374"
+                  offsetFromSymbolStart = "683">
+               </Location>
+               <Location
+                  uuid = "271F03B9-F4B9-47C3-B3FD-8E55FE055DF6 - 5da91a19fd8c8082"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in static MPress.APIManager.getAllLinks(completion: (Swift.Optional&lt;Swift.Array&lt;MPress.Links&gt;&gt;) -&gt; (), error: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "MPress"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zunair/Documents/mpress/Tappze/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "374"
+                  endingLineNumber = "374"
+                  offsetFromSymbolStart = "845">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51F1F723-5116-4214-9A67-E9A0DA3C63AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tappze/AddLinksReusableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AddLinksReusableView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

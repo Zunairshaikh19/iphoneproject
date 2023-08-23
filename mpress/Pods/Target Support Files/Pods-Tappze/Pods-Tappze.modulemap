@@ -1,0 +1,6 @@
+framework module Pods_Tappze {
+  umbrella header "Pods-Tappze-umbrella.h"
+
+  export *
+  module * { export * }
+}

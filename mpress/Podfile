@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Tappze' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for Tappze
+  pod 'IQKeyboardManagerSwift'
+  pod 'AnimatedField'
+  pod 'Firebase','~> 8.6.0'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'CodableFirebase'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'CropViewController'
+  pod 'NVActivityIndicatorView'
+  pod 'iOSDropDown', '~> 0.3.4'
+  pod 'Appz'
+  pod 'NFCReaderWriter'
+  #pod 'Stripe'
+  pod 'GoogleSignIn', '~> 6.0.2'
+  pod 'FBSDKLoginKit','~> 11.1.0'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'Google-Maps-iOS-Utils'
+
+  target 'TappzeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
+  target 'TappzeUITests' do
+    # Pods for testing
+  end
+  
+end
