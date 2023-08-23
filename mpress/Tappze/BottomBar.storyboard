@@ -1028,77 +1028,101 @@
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ng-Z1-pbn">
-                                                            <rect key="frame" x="263" y="10" width="100" height="30"/>
-                                                            <color key="backgroundColor" name="clrBlack"/>
+                                                            <rect key="frame" x="235" y="110" width="30" height="30"/>
+                                                            <color key="backgroundColor" name="clrWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="9MV-Sg-5bD"/>
+                                                                <constraint firstAttribute="width" constant="30" id="9MV-Sg-5bD"/>
                                                                 <constraint firstAttribute="height" constant="30" id="V01-OX-fmK"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <state key="normal" title="Add Image">
+                                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                                            <state key="normal" image="add new">
                                                                 <color key="titleColor" name="clrWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </button>
                                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQH-a1-GuA">
-                                                            <rect key="frame" x="263" y="10" width="100" height="30"/>
-                                                            <color key="backgroundColor" name="clrBlack"/>
+                                                            <rect key="frame" x="235" y="110" width="30" height="30"/>
+                                                            <color key="backgroundColor" name="clrWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="DtT-q9-Ag4"/>
+                                                                <constraint firstAttribute="width" constant="30" id="DtT-q9-Ag4"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="tintColor" systemColor="systemPinkColor"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal" title="Delete Image">
+                                                            <state key="normal" image="trash.fill" catalog="system">
                                                                 <color key="titleColor" name="clrWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axZ-Jt-3XE">
-                                                            <rect key="frame" x="8" y="8" width="100" height="30"/>
-                                                            <color key="backgroundColor" name="clrBlack"/>
+                                                            <rect key="frame" x="320" y="15" width="30" height="30"/>
+                                                            <color key="backgroundColor" name="clrWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="eKo-D0-Lhm"/>
+                                                                <constraint firstAttribute="width" constant="30" id="eKo-D0-Lhm"/>
                                                                 <constraint firstAttribute="height" constant="30" id="fRc-RS-BcZ"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <state key="normal" title="Add Image">
+                                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                                            <state key="normal" image="add new">
                                                                 <color key="titleColor" name="clrWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </button>
                                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoR-UL-j8v">
-                                                            <rect key="frame" x="8" y="8" width="100" height="30"/>
-                                                            <color key="backgroundColor" name="clrBlack"/>
+                                                            <rect key="frame" x="320" y="15" width="30" height="30"/>
+                                                            <color key="backgroundColor" name="clrWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="fb0-11-bZk"/>
+                                                                <constraint firstAttribute="width" constant="30" id="fb0-11-bZk"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="tintColor" systemColor="systemPinkColor"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                            <state key="normal" title="Delete Image">
+                                                            <state key="normal" image="trash.fill" catalog="system">
                                                                 <color key="titleColor" name="clrWhite"/>
                                                             </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="wcC-Mq-Umg" firstAttribute="leading" secondItem="hN8-3c-WSU" secondAttribute="leading" constant="130" id="1H7-eU-xbM"/>
                                                         <constraint firstItem="qCK-6w-d7n" firstAttribute="leading" secondItem="hN8-3c-WSU" secondAttribute="leading" constant="-14" id="3Tt-FT-6b5"/>
-                                                        <constraint firstItem="AoR-UL-j8v" firstAttribute="top" secondItem="hN8-3c-WSU" secondAttribute="topMargin" id="4zS-SI-5NS"/>
+                                                        <constraint firstItem="AoR-UL-j8v" firstAttribute="top" secondItem="hN8-3c-WSU" secondAttribute="topMargin" constant="7" id="4zS-SI-5NS"/>
                                                         <constraint firstItem="qCK-6w-d7n" firstAttribute="centerX" secondItem="hN8-3c-WSU" secondAttribute="centerX" id="50r-Di-b2J"/>
                                                         <constraint firstItem="sQH-a1-GuA" firstAttribute="leading" secondItem="0Ng-Z1-pbn" secondAttribute="leading" id="5qz-H0-TJZ"/>
                                                         <constraint firstItem="sQH-a1-GuA" firstAttribute="bottom" secondItem="0Ng-Z1-pbn" secondAttribute="bottom" id="GT4-Ew-3R2"/>
                                                         <constraint firstItem="wcC-Mq-Umg" firstAttribute="top" secondItem="hN8-3c-WSU" secondAttribute="top" constant="50" id="IaW-pu-dsI"/>
                                                         <constraint firstItem="AoR-UL-j8v" firstAttribute="leading" secondItem="axZ-Jt-3XE" secondAttribute="leading" id="K94-7K-jJq"/>
                                                         <constraint firstItem="AoR-UL-j8v" firstAttribute="trailing" secondItem="axZ-Jt-3XE" secondAttribute="trailing" id="QmL-O1-Zoo"/>
-                                                        <constraint firstItem="AoR-UL-j8v" firstAttribute="leading" secondItem="hN8-3c-WSU" secondAttribute="leadingMargin" id="Rx1-eI-LyC"/>
+                                                        <constraint firstItem="AoR-UL-j8v" firstAttribute="leading" secondItem="hN8-3c-WSU" secondAttribute="leadingMargin" constant="312" id="Rx1-eI-LyC"/>
                                                         <constraint firstAttribute="bottom" secondItem="wcC-Mq-Umg" secondAttribute="bottom" constant="210" id="Tga-ht-B8k"/>
                                                         <constraint firstAttribute="trailing" secondItem="wcC-Mq-Umg" secondAttribute="trailing" constant="123" id="TmR-O3-crE"/>
                                                         <constraint firstItem="AoR-UL-j8v" firstAttribute="bottom" secondItem="axZ-Jt-3XE" secondAttribute="bottom" id="UlP-0M-xXg"/>
                                                         <constraint firstItem="sQH-a1-GuA" firstAttribute="top" secondItem="0Ng-Z1-pbn" secondAttribute="top" id="VMI-30-JNZ"/>
                                                         <constraint firstAttribute="height" constant="380" id="W1i-jy-CB5"/>
                                                         <constraint firstItem="sQH-a1-GuA" firstAttribute="trailing" secondItem="0Ng-Z1-pbn" secondAttribute="trailing" id="Xq5-ui-eiE"/>
-                                                        <constraint firstAttribute="trailing" secondItem="0Ng-Z1-pbn" secondAttribute="trailing" constant="10" id="eLX-55-S86"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0Ng-Z1-pbn" secondAttribute="trailing" constant="108" id="eLX-55-S86"/>
                                                         <constraint firstItem="qCK-6w-d7n" firstAttribute="centerY" secondItem="hN8-3c-WSU" secondAttribute="centerY" id="gpX-5D-1Yz"/>
                                                         <constraint firstItem="qCK-6w-d7n" firstAttribute="height" secondItem="hN8-3c-WSU" secondAttribute="height" id="hVT-9G-6oM"/>
                                                         <constraint firstItem="AoR-UL-j8v" firstAttribute="top" secondItem="axZ-Jt-3XE" secondAttribute="top" id="mma-bT-Bbk"/>
-                                                        <constraint firstItem="0Ng-Z1-pbn" firstAttribute="top" secondItem="hN8-3c-WSU" secondAttribute="top" constant="10" id="xPJ-FE-sKj"/>
+                                                        <constraint firstItem="0Ng-Z1-pbn" firstAttribute="top" secondItem="hN8-3c-WSU" secondAttribute="top" constant="110" id="xPJ-FE-sKj"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
@@ -2521,6 +2545,7 @@
         <image name="scan_tag_img" width="504" height="754"/>
         <image name="settings_tab" width="30" height="30"/>
         <image name="trash" catalog="system" width="117" height="128"/>
+        <image name="trash.fill" catalog="system" width="119" height="128"/>
         <namedColor name="clrBlack">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -2535,6 +2560,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
